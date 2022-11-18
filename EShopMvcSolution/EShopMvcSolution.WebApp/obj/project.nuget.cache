@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+wbTpIuOwGq/CdTBmphEUZuRLBZPWSDrpDQ8WlEKNllBV8fEHZlEiOMLy8EoU7p0MOEz6WA65fKE/lvEmOB3kw==",
+  "dgSpecHash": "CK0bKhQ1oiR/6ee/45BY0HhfE17yey9NrODtL/WxHdGh061DxFtgw2rQ0OllbE3n21B/QSAr2g2ef/fhs0NceQ==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\EShopMvcSolution\\EShopMvcSolution.WebApp\\EShopMvcSolution.WebApp.csproj",
+  "projectFilePath": "D:\\Projects\\EShopMvc\\EShopMvcSolution\\EShopMvcSolution.WebApp\\EShopMvcSolution.WebApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

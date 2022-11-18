@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\EShopMvcSolution\\EShopMvcSolution.WebApp\\EShopMvcSolution.WebApp.csproj": {}
+    "D:\\Projects\\EShopMvc\\EShopMvcSolution\\EShopMvcSolution.WebApp\\EShopMvcSolution.WebApp.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\EShopMvcSolution\\EShopMvcSolution.WebApp\\EShopMvcSolution.WebApp.csproj": {
+    "D:\\Projects\\EShopMvc\\EShopMvcSolution\\EShopMvcSolution.WebApp\\EShopMvcSolution.WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\EShopMvcSolution\\EShopMvcSolution.WebApp\\EShopMvcSolution.WebApp.csproj",
+        "projectUniqueName": "D:\\Projects\\EShopMvc\\EShopMvcSolution\\EShopMvcSolution.WebApp\\EShopMvcSolution.WebApp.csproj",
         "projectName": "EShopMvcSolution.WebApp",
-        "projectPath": "D:\\Projects\\EShopMvcSolution\\EShopMvcSolution.WebApp\\EShopMvcSolution.WebApp.csproj",
+        "projectPath": "D:\\Projects\\EShopMvc\\EShopMvcSolution\\EShopMvcSolution.WebApp\\EShopMvcSolution.WebApp.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\EShopMvcSolution\\EShopMvcSolution.WebApp\\obj\\",
+        "outputPath": "D:\\Projects\\EShopMvc\\EShopMvcSolution\\EShopMvcSolution.WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
