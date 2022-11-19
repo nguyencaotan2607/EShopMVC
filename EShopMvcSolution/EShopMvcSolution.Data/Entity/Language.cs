@@ -8,7 +8,7 @@ namespace EShopMvcSolution.Data.Entity
 {
     public class Language
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public bool Isdefault { get; set; }
         public List<ProductTranslation> ProductTranslations { get; set; }
