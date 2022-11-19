@@ -10,7 +10,7 @@ namespace EShopMvcSolution.Data.Entity
     {
         public int Id { get; set; }
 
-        public int CategoryId { get; set; }
+        public int ProductId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
 
@@ -19,5 +19,9 @@ namespace EShopMvcSolution.Data.Entity
 
         public string Seotitle { get; set; }
         public int LanguageId { get; set; }
+
+        public Product Products { get; set; }
+
+        public Language Languages { get; set; }
     }
 }

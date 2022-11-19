@@ -21,6 +21,8 @@ namespace EShopMvcSolution.Data.Entity
 
         public Guid UserId { get; set; }
 
+        public AppUser AppUsers { set; get; }
+
 
     }
 }

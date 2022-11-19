@@ -12,13 +12,15 @@ namespace EShopMvcSolution.Data.Entity
         public int Id { get; set; }
         public DateTime OrderDate { get; set; }
         public Guid UserId { get; set; }
-        public int ShipName { get; set; }
-        public int ShipAddress { get; set; }
-        public int ShipEmail { get; set; }
-        public int ShipPhoneNumber { get; set; }
+        public string ShipName { get; set; }
+        public string ShipAddress { get; set; }
+        public string ShipEmail { get; set; }
+        public string ShipPhoneNumber { get; set; }
         public OrderStatus Status { get; set; }
 
         public List<OrderDetail> OrderDetails { get; set; }
+
+        public AppUser AppUsers { get; set; }
 
     }
 }
