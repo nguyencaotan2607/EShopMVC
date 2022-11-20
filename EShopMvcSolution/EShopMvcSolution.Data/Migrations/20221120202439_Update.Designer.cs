@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EShopMvcSolution.Data.Migrations
 {
     [DbContext(typeof(EShopMvcDbContext))]
-    [Migration("20221119192747_Initial")]
-    partial class Initial
+    [Migration("20221120202439_Update")]
+    partial class Update
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -33,6 +33,23 @@ namespace EShopMvcSolution.Data.Migrations
                     b.HasKey("Key");
 
                     b.ToTable("AppConfig");
+
+                    b.HasData(
+                        new
+                        {
+                            Key = "HomeTitle",
+                            Value = "This is Home Page of EshopMvc"
+                        },
+                        new
+                        {
+                            Key = "HomeKeyword",
+                            Value = "This is Keyword of EShopMvc"
+                        },
+                        new
+                        {
+                            Key = "HomeDescription",
+                            Value = "This is Description of EshopMvc"
+                        });
                 });
 
             modelBuilder.Entity("EShopMvcSolution.Data.Entity.AppRole", b =>
@@ -183,6 +200,22 @@ namespace EShopMvcSolution.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Category");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            IsShowOnHome = true,
+                            SortOrder = 1,
+                            Status = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            IsShowOnHome = true,
+                            SortOrder = 2,
+                            Status = 1
+                        });
                 });
 
             modelBuilder.Entity("EShopMvcSolution.Data.Entity.CategoryTranslation", b =>
@@ -197,8 +230,9 @@ namespace EShopMvcSolution.Data.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
-                    b.Property<int>("LanguageId")
-                        .HasColumnType("int")
+                    b.Property<string>("LanguageId")
+                        .IsRequired()
+                        .HasColumnType("varchar(5)")
                         .HasMaxLength(5)
                         .IsUnicode(false);
 
@@ -227,6 +261,58 @@ namespace EShopMvcSolution.Data.Migrations
                     b.HasIndex("LanguageId");
 
                     b.ToTable("CategoryTranslations");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CategoryId = 1,
+                            LanguageId = "vi-VN",
+                            Name = "Áo Khoác Nam",
+                            SeoAlias = "ao-khoac-nam",
+                            SeoDescription = "Áo khoác thời trang nam",
+                            SeoTitle = "Áo khoác thời trang nam"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CategoryId = 1,
+                            LanguageId = "en-US",
+                            Name = "Men's Jacket",
+                            SeoAlias = "Men's-Jacket",
+                            SeoDescription = "Men's Fashion jacket products",
+                            SeoTitle = "Men's Fashion jacket"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CategoryId = 1,
+                            LanguageId = "Korea",
+                            Name = "남성 재킷",
+                            SeoAlias = "Men's-Jacket",
+                            SeoDescription = "남성 재킷",
+                            SeoTitle = "남성 재킷"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CategoryId = 2,
+                            LanguageId = "vi-VN",
+                            Name = "Áo Khoác Nữ",
+                            SeoAlias = "ao-khoac-nu",
+                            SeoDescription = "Áo khoác thời trang nữ",
+                            SeoTitle = "Áo khoác thời trang nữ"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CategoryId = 2,
+                            LanguageId = "en-US",
+                            Name = "Women's Jacket",
+                            SeoAlias = "women's-Jacket",
+                            SeoDescription = "women's Fashion jacket products",
+                            SeoTitle = "women's Fashion jacket"
+                        });
                 });
 
             modelBuilder.Entity("EShopMvcSolution.Data.Entity.Contact", b =>
@@ -270,12 +356,10 @@ namespace EShopMvcSolution.Data.Migrations
 
             modelBuilder.Entity("EShopMvcSolution.Data.Entity.Language", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                    b.Property<string>("Id")
+                        .HasColumnType("varchar(5)")
                         .HasMaxLength(5)
-                        .IsUnicode(false)
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .IsUnicode(false);
 
                     b.Property<bool>("Isdefault")
                         .HasColumnType("bit");
@@ -288,6 +372,26 @@ namespace EShopMvcSolution.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Languages");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "vi-VN",
+                            Isdefault = true,
+                            Name = "Tiếng Việt"
+                        },
+                        new
+                        {
+                            Id = "en-US",
+                            Isdefault = false,
+                            Name = "EngLish"
+                        },
+                        new
+                        {
+                            Id = "Korea",
+                            Isdefault = false,
+                            Name = "Korea"
+                        });
                 });
 
             modelBuilder.Entity("EShopMvcSolution.Data.Entity.Order", b =>
@@ -392,6 +496,17 @@ namespace EShopMvcSolution.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Product");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DateCreate = new DateTime(2022, 11, 21, 3, 24, 38, 498, DateTimeKind.Local).AddTicks(6826),
+                            OriginalPrice = 10000m,
+                            Prince = 20000m,
+                            Stock = 0,
+                            Viewcount = 0
+                        });
                 });
 
             modelBuilder.Entity("EShopMvcSolution.Data.Entity.ProductImage", b =>
@@ -447,6 +562,13 @@ namespace EShopMvcSolution.Data.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("ProductInCategories");
+
+                    b.HasData(
+                        new
+                        {
+                            CategoryId = 1,
+                            ProductId = 1
+                        });
                 });
 
             modelBuilder.Entity("EShopMvcSolution.Data.Entity.ProductTranslation", b =>
@@ -465,8 +587,9 @@ namespace EShopMvcSolution.Data.Migrations
                         .HasColumnType("nvarchar(500)")
                         .HasMaxLength(500);
 
-                    b.Property<int>("LanguageId")
-                        .HasColumnType("int")
+                    b.Property<string>("LanguageId")
+                        .IsRequired()
+                        .HasColumnType("varchar(5)")
                         .HasMaxLength(5)
                         .IsUnicode(false);
 
@@ -478,10 +601,13 @@ namespace EShopMvcSolution.Data.Migrations
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
+                    b.Property<string>("SeoAlias")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("SeoDescription")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Seotitle")
+                    b.Property<string>("SeoTitle")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -491,6 +617,44 @@ namespace EShopMvcSolution.Data.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("ProductTranslations");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "",
+                            Details = "Mô tả sản phẩm",
+                            LanguageId = "vi-VN",
+                            Name = "Áo Khoác Nam Nhập khẩu từ hàn Quốc",
+                            ProductId = 1,
+                            SeoAlias = "ao-khoac-nam-nhap-khau-tu-han-quoc",
+                            SeoDescription = "Áo khoác thời trang nam nhập khẩu",
+                            SeoTitle = "Áo khoác thời trang nam"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "",
+                            Details = "Description of product",
+                            LanguageId = "en-US",
+                            Name = "Men's Jacket",
+                            ProductId = 1,
+                            SeoAlias = "Men's-Jacket",
+                            SeoDescription = "Men's Fashion jacket products",
+                            SeoTitle = "Men's Fashion jacket"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "",
+                            Details = "남성 재킷",
+                            LanguageId = "Korea",
+                            Name = "남성 재킷",
+                            ProductId = 1,
+                            SeoAlias = "남성 재킷",
+                            SeoDescription = "남성 재킷",
+                            SeoTitle = "남성 재킷"
+                        });
                 });
 
             modelBuilder.Entity("EShopMvcSolution.Data.Entity.Promotion", b =>

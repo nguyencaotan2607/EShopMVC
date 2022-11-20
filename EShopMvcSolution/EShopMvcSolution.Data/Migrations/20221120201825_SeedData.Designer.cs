@@ -4,14 +4,16 @@ using EShopMvcSolution.Data.EF;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EShopMvcSolution.Data.Migrations
 {
     [DbContext(typeof(EShopMvcDbContext))]
-    partial class EShopMvcDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221120201825_SeedData")]
+    partial class SeedData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -283,16 +285,6 @@ namespace EShopMvcSolution.Data.Migrations
                         },
                         new
                         {
-                            Id = 3,
-                            CategoryId = 1,
-                            LanguageId = "Korea",
-                            Name = "남성 재킷",
-                            SeoAlias = "Men's-Jacket",
-                            SeoDescription = "남성 재킷",
-                            SeoTitle = "남성 재킷"
-                        },
-                        new
-                        {
                             Id = 4,
                             CategoryId = 2,
                             LanguageId = "vi-VN",
@@ -383,12 +375,6 @@ namespace EShopMvcSolution.Data.Migrations
                             Id = "en-US",
                             Isdefault = false,
                             Name = "EngLish"
-                        },
-                        new
-                        {
-                            Id = "Korea",
-                            Isdefault = false,
-                            Name = "Korea"
                         });
                 });
 
@@ -499,7 +485,7 @@ namespace EShopMvcSolution.Data.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreate = new DateTime(2022, 11, 21, 3, 24, 38, 498, DateTimeKind.Local).AddTicks(6826),
+                            DateCreate = new DateTime(2022, 11, 21, 3, 18, 24, 882, DateTimeKind.Local).AddTicks(9562),
                             OriginalPrice = 10000m,
                             Prince = 20000m,
                             Stock = 0,
@@ -640,18 +626,6 @@ namespace EShopMvcSolution.Data.Migrations
                             SeoAlias = "Men's-Jacket",
                             SeoDescription = "Men's Fashion jacket products",
                             SeoTitle = "Men's Fashion jacket"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Description = "",
-                            Details = "남성 재킷",
-                            LanguageId = "Korea",
-                            Name = "남성 재킷",
-                            ProductId = 1,
-                            SeoAlias = "남성 재킷",
-                            SeoDescription = "남성 재킷",
-                            SeoTitle = "남성 재킷"
                         });
                 });
 

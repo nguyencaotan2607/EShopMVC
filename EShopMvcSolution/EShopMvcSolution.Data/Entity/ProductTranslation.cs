@@ -17,8 +17,10 @@ namespace EShopMvcSolution.Data.Entity
         public string Details { get; set; }
         public string SeoDescription { get; set; }
 
-        public string Seotitle { get; set; }
-        public int LanguageId { get; set; }
+        public string SeoAlias { get; set; }
+
+        public string SeoTitle { get; set; }
+        public string LanguageId { get; set; }
 
         public Product Products { get; set; }
 

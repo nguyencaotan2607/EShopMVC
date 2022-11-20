@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using EShopMvcSolution.Data.Configuration;
 using EShopMvcSolution.Data.Entity;
+using EShopMvcSolution.Data.Extentions;
 using Microsoft.EntityFrameworkCore;
 
 namespace EShopMvcSolution.Data.EF
@@ -17,6 +18,7 @@ namespace EShopMvcSolution.Data.EF
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // Configure using Fluent API
             modelBuilder.ApplyConfiguration(new CartConfiguration());
 
             modelBuilder.ApplyConfiguration(new AppConfigConfiguration());
@@ -38,6 +40,10 @@ namespace EShopMvcSolution.Data.EF
             modelBuilder.ApplyConfiguration(new ProductImageConfiguration());
             modelBuilder.ApplyConfiguration(new SlideConfiguration());
 
+            // Data Seeding
+
+            modelBuilder.Seed();
+            
             //base.OnModelCreating(modelBuilder);
         }
         public DbSet<Product> Products { get; set; }
