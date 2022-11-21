@@ -1,0 +1,14 @@
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Data\obj\Debug\net6.0\EShopMvcSolution.Data.csproj.AssemblyReference.cache
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Data\obj\Debug\net6.0\EShopMvcSolution.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Data\obj\Debug\net6.0\EShopMvcSolution.Data.AssemblyInfoInputs.cache
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Data\obj\Debug\net6.0\EShopMvcSolution.Data.AssemblyInfo.cs
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Data\obj\Debug\net6.0\EShopMvcSolution.Data.csproj.CoreCompileInputs.cache
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Data\bin\Debug\net6.0\EShopMvcSolution.Data.deps.json
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Data\bin\Debug\net6.0\EShopMvcSolution.Data.runtimeconfig.json
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Data\bin\Debug\net6.0\EShopMvcSolution.Data.dll
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Data\bin\Debug\net6.0\EShopMvcSolution.Data.pdb
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Data\obj\Debug\net6.0\EShopMvcSolution.Data.dll
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Data\obj\Debug\net6.0\refint\EShopMvcSolution.Data.dll
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Data\obj\Debug\net6.0\EShopMvcSolution.Data.pdb
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Data\obj\Debug\net6.0\EShopMvcSolution.Data.genruntimeconfig.cache
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Data\obj\Debug\net6.0\ref\EShopMvcSolution.Data.dll

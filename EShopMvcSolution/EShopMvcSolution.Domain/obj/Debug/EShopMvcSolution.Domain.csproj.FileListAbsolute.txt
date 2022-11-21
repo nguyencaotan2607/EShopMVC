@@ -1,6 +1,0 @@
-D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\bin\Debug\EShopMvcSolution.Domain.dll
-D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\bin\Debug\EShopMvcSolution.Domain.pdb
-D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\obj\Debug\EShopMvcSolution.Domain.csproj.AssemblyReference.cache
-D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\obj\Debug\EShopMvcSolution.Domain.csproj.CoreCompileInputs.cache
-D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\obj\Debug\EShopMvcSolution.Domain.dll
-D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\obj\Debug\EShopMvcSolution.Domain.pdb

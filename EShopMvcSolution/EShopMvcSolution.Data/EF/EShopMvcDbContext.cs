@@ -7,10 +7,11 @@ using EShopMvcSolution.Data.Configuration;
 using EShopMvcSolution.Data.Entity;
 using EShopMvcSolution.Data.Extentions;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace EShopMvcSolution.Data.EF
 {
-    class EShopMvcDbContext : DbContext
+    class EShopMvcDbContext : IdentityDbContext
     {
         public EShopMvcDbContext(DbContextOptions options) : base(options)
         {
