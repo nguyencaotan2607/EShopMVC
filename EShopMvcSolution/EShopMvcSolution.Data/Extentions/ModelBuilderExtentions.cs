@@ -7,11 +7,14 @@ using EShopMvcSolution.Data.Entity;
 using EShopMvcSolution.Data.Enum;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 namespace EShopMvcSolution.Data.Extentions
 {
     public static class ModelBuilderExtentions
     {
+
+
         public static void Seed(this ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<AppConfig>().HasData(
@@ -92,13 +95,43 @@ namespace EShopMvcSolution.Data.Extentions
             var RoleID = new Guid("42323D12-3FE8-4118-B801-2D2B201BE1E1");
             var UserID = new Guid("7B60066F-0858-4879-A924-28C011D80F20");
 
+           
+            var employeeId = new Guid("A35D4CE1-076B-4369-A16A-C08C10DE1278");
+            var sellerId = new Guid("E425FFA2-C591-445B-8051-8605FEE3D90F");
+            var customerId = new Guid("28C32CE9-578A-4525-B45D-D115DB752A04");
+
+
+
             modelBuilder.Entity<AppRole>().HasData(new AppRole
             {
                 Id = RoleID,
                 Name = "admin",
                 NormalizedName = "admin",
                 Description= "Adminitration role"
-            });
+            },
+             
+             new AppRole
+             {
+                    Id = employeeId,
+                    Name = "Employee",
+                    NormalizedName = "EMPLOYEE",
+                 Description = "Employee role"
+             },
+             new AppRole
+             {
+                    Id = sellerId,
+                    Name = "Seller",
+                    NormalizedName = "SELLER",
+                 Description = "Seller role"
+             },
+             new AppRole
+             {
+                    Id = customerId,
+                    Name = "Customer",
+                    NormalizedName = "CUSTOMER",
+                 Description = "Customer role"
+             }
+            );
             var hasher = new PasswordHasher<AppUser>();
             modelBuilder.Entity<AppUser>().HasData(new AppUser
             {
