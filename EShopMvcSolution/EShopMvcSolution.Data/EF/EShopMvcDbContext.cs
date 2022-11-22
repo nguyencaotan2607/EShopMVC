@@ -8,10 +8,11 @@ using EShopMvcSolution.Data.Entity;
 using EShopMvcSolution.Data.Extentions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace EShopMvcSolution.Data.EF
 {
-    class EShopMvcDbContext : IdentityDbContext
+    class EShopMvcDbContext : IdentityDbContext<AppUser,AppRole,Guid>
     {
         public EShopMvcDbContext(DbContextOptions options) : base(options)
         {
@@ -40,6 +41,16 @@ namespace EShopMvcSolution.Data.EF
             modelBuilder.ApplyConfiguration(new AppRoleConfiguration());
             modelBuilder.ApplyConfiguration(new ProductImageConfiguration());
             modelBuilder.ApplyConfiguration(new SlideConfiguration());
+
+            modelBuilder.Entity<IdentityUserClaim<Guid>>().ToTable("AppUserClams");
+            modelBuilder.Entity<IdentityUserRole<Guid>>().ToTable("AppUserRoles").HasKey(x=> new {x.UserId, x.RoleId });
+            modelBuilder.Entity<IdentityUserLogin<Guid>>().ToTable("AppUserLogins").HasKey(x=>x.UserId);
+
+            modelBuilder.Entity<IdentityRoleClaim<Guid>>().ToTable("AppRoleClaims");
+            modelBuilder.Entity<IdentityUserToken<Guid>>().ToTable("AppUserTokens").HasKey(x=>x.UserId);
+
+
+
 
             // Data Seeding
 

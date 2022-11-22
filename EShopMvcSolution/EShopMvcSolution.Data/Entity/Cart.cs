@@ -23,6 +23,5 @@ namespace EShopMvcSolution.Data.Entity
 
 
 
-
     }
 }
