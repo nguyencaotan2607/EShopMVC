@@ -1,6 +1,6 @@
-# ASP.NET Core 3.1 project
+# ASP.NET Core 6.0 project
 ## Technologies
-	- ASP.Net core 3.1
+	- ASP.Net core 6.0
 	- Entity Framework (code first)
 ## Install packages
  - Microsoft.EntityFrameworkCore.SqlServer
