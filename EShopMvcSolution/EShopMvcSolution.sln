@@ -8,11 +8,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.txt = README.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShopMvcSolution.Domain", "EShopMvcSolution.Domain\EShopMvcSolution.Domain.csproj", "{5CB97381-4665-466C-A982-2FB6112B5F9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShopMvcSolution.Application", "EShopMvcSolution.Domain\EShopMvcSolution.Application.csproj", "{5CB97381-4665-466C-A982-2FB6112B5F9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShopMvcSolution.WebApp", "EShopMvcSolution.WebApp\EShopMvcSolution.WebApp.csproj", "{962D6A4A-785B-485F-B927-F7EA745FA83E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShopMvcSolution.WebApp", "EShopMvcSolution.WebApp\EShopMvcSolution.WebApp.csproj", "{962D6A4A-785B-485F-B927-F7EA745FA83E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShopMvcSolution.Data", "EShopMvcSolution.Data\EShopMvcSolution.Data.csproj", "{15A7C2A6-EE3D-479A-86A7-5D329F7BDC1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShopMvcSolution.Data", "EShopMvcSolution.Data\EShopMvcSolution.Data.csproj", "{15A7C2A6-EE3D-479A-86A7-5D329F7BDC1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -12,9 +12,9 @@ using Microsoft.AspNetCore.Identity;
 
 namespace EShopMvcSolution.Data.EF
 {
-    class EShopMvcDbContext : IdentityDbContext<AppUser,AppRole,Guid>
+    public class EShopMvcDbContext : IdentityDbContext<AppUser,AppRole,Guid>
     {
-        public EShopMvcDbContext(DbContextOptions options) : base(options)
+         public EShopMvcDbContext(DbContextOptions options) : base(options)
         {
 
         }
