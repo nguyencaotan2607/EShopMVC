@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using EShopMvcSolution.Application.Catalog.Products.Dtos;
 using EShopMvcSolution.Application.Dtos;
+using EShopMvcSolution.Data.Entity;
 
 namespace EShopMvcSolution.Application.Catalog.Products
 {
@@ -14,7 +15,7 @@ namespace EShopMvcSolution.Application.Catalog.Products
 
         Task<int> Update(ProductEditRequest request);
 
-        Task<int> Delete(int productId);
+        Task<int> Delete(Product productId);
 
 
         Task<List<ProductViewModel>> GetAll();

@@ -30,7 +30,7 @@ namespace EShopMvcSolution.Application.Catalog.Products
 
         }
 
-        public async Task<int> Delete(int productId)
+        public async Task<int> Delete(Product productId)
         {
             
             _context.Products.Remove(productId);
