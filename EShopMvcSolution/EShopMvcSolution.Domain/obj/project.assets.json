@@ -994,6 +994,16 @@
         "runtime": {
           "bin/placeholder/EShopMvcSolution.Data.dll": {}
         }
+      },
+      "EShopSolution.Utilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/EShopSolution.Utilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EShopSolution.Utilities.dll": {}
+        }
       }
     }
   },
@@ -2464,11 +2474,17 @@
       "type": "project",
       "path": "../EShopMvcSolution.Data/EShopMvcSolution.Data.csproj",
       "msbuildProject": "../EShopMvcSolution.Data/EShopMvcSolution.Data.csproj"
+    },
+    "EShopSolution.Utilities/1.0.0": {
+      "type": "project",
+      "path": "../EShopSolution.Utilities/EShopSolution.Utilities.csproj",
+      "msbuildProject": "../EShopSolution.Utilities/EShopSolution.Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "EShopMvcSolution.Data >= 1.0.0"
+      "EShopMvcSolution.Data >= 1.0.0",
+      "EShopSolution.Utilities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2500,6 +2516,9 @@
           "projectReferences": {
             "D:\\Projects\\EShopMvc\\EShopMvcSolution\\EShopMvcSolution.Data\\EShopMvcSolution.Data.csproj": {
               "projectPath": "D:\\Projects\\EShopMvc\\EShopMvcSolution\\EShopMvcSolution.Data\\EShopMvcSolution.Data.csproj"
+            },
+            "D:\\Projects\\EShopMvc\\EShopMvcSolution\\EShopSolution.Utilities\\EShopSolution.Utilities.csproj": {
+              "projectPath": "D:\\Projects\\EShopMvc\\EShopMvcSolution\\EShopSolution.Utilities\\EShopSolution.Utilities.csproj"
             }
           }
         }

@@ -1,0 +1,15 @@
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\bin\Debug\net6.0\EShopMvcSolution.Application.deps.json
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\bin\Debug\net6.0\EShopMvcSolution.Application.dll
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\bin\Debug\net6.0\EShopMvcSolution.Application.pdb
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\bin\Debug\net6.0\EShopMvcSolution.Data.dll
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\bin\Debug\net6.0\EShopMvcSolution.Data.pdb
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\obj\Debug\net6.0\EShopMvcSolution.Application.csproj.AssemblyReference.cache
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\obj\Debug\net6.0\EShopMvcSolution.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\obj\Debug\net6.0\EShopMvcSolution.Application.AssemblyInfoInputs.cache
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\obj\Debug\net6.0\EShopMvcSolution.Application.AssemblyInfo.cs
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\obj\Debug\net6.0\EShopMvcSolution.Application.csproj.CoreCompileInputs.cache
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\obj\Debug\net6.0\EShopMvcSolution.Application.csproj.CopyComplete
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\obj\Debug\net6.0\EShopMvcSolution.Application.dll
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\obj\Debug\net6.0\refint\EShopMvcSolution.Application.dll
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\obj\Debug\net6.0\EShopMvcSolution.Application.pdb
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\obj\Debug\net6.0\ref\EShopMvcSolution.Application.dll

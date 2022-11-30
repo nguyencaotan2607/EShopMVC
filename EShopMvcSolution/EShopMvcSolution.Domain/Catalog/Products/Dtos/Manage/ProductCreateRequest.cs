@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EShopMvcSolution.Application.Catalog.Products.Dtos
+namespace EShopMvcSolution.Application.Catalog.Products.Dtos.Manage
 {
-    public class ProductViewModel
+    public class ProductCreateRequest
     {
-        public int Id { get; set; }
         public decimal Prince { get; set; }
         public decimal OriginalPrice { get; set; }
         public int Stock { get; set; }
@@ -25,6 +24,5 @@ namespace EShopMvcSolution.Application.Catalog.Products.Dtos
 
         public string SeoTitle { get; set; }
         public string LanguageId { get; set; }
-
     }
 }
