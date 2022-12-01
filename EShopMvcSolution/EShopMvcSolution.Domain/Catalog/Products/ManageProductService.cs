@@ -127,17 +127,39 @@ namespace EShopMvcSolution.Application.Catalog.Products
 
         public async Task<int> Update(ProductUpdateRequest request)
         {
-            throw new NotImplementedException();
+            var product = await _context.Products.FindAsync(request.Id);
+            var producttranslation = await _context.ProductTranslations.FirstOrDefaultAsync(x => x.ProductId == request.Id && x.LanguageId == request.LanguageId);
+
+            if (product == null || producttranslation == null) throw new EShopException($"Can't Find a Product With Id: {request.Id}");
+
+            producttranslation.Name = request.Name;
+            producttranslation.Description = request.Description;
+            producttranslation.SeoTitle = request.SeoTitle;
+            producttranslation.SeoDescription= request.SeoDescription;
+            producttranslation.Details = request.Details;
+            producttranslation.SeoAlias= request.SeoAlias;
+
+            return await _context.SaveChangesAsync();
         }
 
-        public Task<bool> UpdatePrice(int productId, decimal newprice)
+        public async Task<bool> UpdatePrice(int productId, decimal newprice)
         {
-            throw new NotImplementedException();
+            var product = await _context.Products.FindAsync(productId);
+
+            if (product == null) throw new EShopException($"Can't Fint Product With Id:{productId}");
+            product.Prince = newprice;
+
+            return await _context.SaveChangesAsync() > 0;
         }
 
-        public Task<bool> UpdateStock(int productId, int AddedQuantity)
+        public async Task<bool> UpdateStock(int productId, int AddedQuantity)
         {
-            throw new NotImplementedException();
+            var product = await _context.Products.FindAsync(productId);
+            if (product == null) throw new EShopException($"Can't Find Product with Id:{productId}");
+
+            product.Stock += AddedQuantity;
+
+            return await _context.SaveChangesAsync() > 0;
         }
     }
 }

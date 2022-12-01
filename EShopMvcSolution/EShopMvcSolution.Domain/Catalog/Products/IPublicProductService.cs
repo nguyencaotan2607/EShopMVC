@@ -11,6 +11,6 @@ namespace EShopMvcSolution.Application.Catalog.Products
 {
     public interface IPublicProductService
     {
-        PagedResult<ProductViewModel> GetAllByCategoryId(GetProductPagingResquest resquest);  
+        Task<PagedResult<ProductViewModel>> GetAllByCategoryId(GetProductPagingResquest resquest);  
     }
 }
