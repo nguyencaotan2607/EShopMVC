@@ -1,15 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.Enumeration;
 using System.Linq;
 using System.Net.Cache;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-using EShopMvcSolution.Application.Catalog.Products.Dtos;
-using EShopMvcSolution.Application.Catalog.Products.Dtos.Manage;
-using EShopMvcSolution.Application.Dtos;
 using EShopMvcSolution.Data.EF;
 using EShopMvcSolution.Data.Entity;
+using EShopMvcSolution.ViewModels.Catalog.Products.Dtos;
+using EShopMvcSolution.ViewModels.Catalog.Products.Dtos.Manage;
+using EShopMvcSolution.ViewModels.Dtos;
 using EShopSolution.Utilities.Exceptions;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 
 namespace EShopMvcSolution.Application.Catalog.Products
@@ -17,6 +20,7 @@ namespace EShopMvcSolution.Application.Catalog.Products
     public class ManageProductService : IManageProductService
     {
         private readonly EShopMvcDbContext _context;
+
 
         public ManageProductService(EShopMvcDbContext context)
         {
@@ -160,6 +164,15 @@ namespace EShopMvcSolution.Application.Catalog.Products
             product.Stock += AddedQuantity;
 
             return await _context.SaveChangesAsync() > 0;
+        }
+
+        public async Task<string> SaveFile(IFormFile file)
+        {
+            var OriginalFileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
+            var FileName = $"{Guid.NewGuid()}{Path.GetExtension(OriginalFileName)}";
+            await _storageService.SaveFileAsync(file.OpenReadStream, FileName);
+            return FileName;
+
         }
     }
 }

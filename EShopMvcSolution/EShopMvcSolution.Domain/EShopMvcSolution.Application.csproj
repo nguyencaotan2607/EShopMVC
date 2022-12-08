@@ -7,7 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\EShopMvcSolution.Data\EShopMvcSolution.Data.csproj" />
+    <ProjectReference Include="..\EShopMvcSolution.ViewModels\EShopMvcSolution.ViewModels.csproj" />
     <ProjectReference Include="..\EShopSolution.Utilities\EShopSolution.Utilities.csproj" />
   </ItemGroup>
 
