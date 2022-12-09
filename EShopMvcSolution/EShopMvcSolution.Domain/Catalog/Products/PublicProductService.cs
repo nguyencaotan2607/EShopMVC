@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using EShopMvcSolution.Data.EF;
 using EShopMvcSolution.ViewModels.Catalog.Products.Dtos;
-using EShopMvcSolution.ViewModels.Catalog.Products.Dtos.Manage;
+using EShopMvcSolution.ViewModels.Catalog.Products.Dtos.Public;
 using EShopMvcSolution.ViewModels.Dtos;
 using Microsoft.EntityFrameworkCore;
 

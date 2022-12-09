@@ -17,7 +17,7 @@ namespace EShopMvcSolution.Application.Common
             _userContentFolder = Path.Combine(webHostEnvironment.WebRootPath, USER_CONTENT_FOLDER_NAME);
         }
 
-        public async Task DeleteFileAsync(string FileName)
+        public async Task DeleteFileAsync(string FileName) 
         {
             var FilePath = Path.Combine(_userContentFolder, FileName);
             if (File.Exists(FilePath))

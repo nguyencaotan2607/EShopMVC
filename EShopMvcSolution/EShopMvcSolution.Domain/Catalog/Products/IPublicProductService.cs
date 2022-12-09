@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using EShopMvcSolution.ViewModels.Catalog.Products.Dtos;
-using EShopMvcSolution.ViewModels.Catalog.Products.Dtos.Manage;
+using EShopMvcSolution.ViewModels.Catalog.Products.Dtos.Public;
 using EShopMvcSolution.ViewModels.Dtos;
 
 namespace EShopMvcSolution.Application.Catalog.Products

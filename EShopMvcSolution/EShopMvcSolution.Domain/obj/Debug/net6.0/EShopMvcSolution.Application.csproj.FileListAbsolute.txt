@@ -13,3 +13,7 @@ D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\obj\Debug\net6.0\E
 D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\obj\Debug\net6.0\refint\EShopMvcSolution.Application.dll
 D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\obj\Debug\net6.0\EShopMvcSolution.Application.pdb
 D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\obj\Debug\net6.0\ref\EShopMvcSolution.Application.dll
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\bin\Debug\net6.0\EShopMvcSolution.ViewModels.dll
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\bin\Debug\net6.0\EShopSolution.Utilities.dll
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\bin\Debug\net6.0\EShopMvcSolution.ViewModels.pdb
+D:\Projects\EShopMvc\EShopMvcSolution\EShopMvcSolution.Domain\bin\Debug\net6.0\EShopSolution.Utilities.pdb
